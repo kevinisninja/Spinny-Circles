@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342AF6B021F2BDBE0056BF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AF6AF21F2BDBE0056BF4B /* AppDelegate.swift */; };
+		342AF6B221F2BDBE0056BF4B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 342AF6B121F2BDBE0056BF4B /* GameScene.sks */; };
+		342AF6B421F2BDBE0056BF4B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 342AF6B321F2BDBE0056BF4B /* Actions.sks */; };
+		342AF6B621F2BDBE0056BF4B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AF6B521F2BDBE0056BF4B /* GameScene.swift */; };
+		342AF6B821F2BDBE0056BF4B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AF6B721F2BDBE0056BF4B /* GameViewController.swift */; };
+		342AF6BB21F2BDBE0056BF4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342AF6B921F2BDBE0056BF4B /* Main.storyboard */; };
+		342AF6BD21F2BDBF0056BF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342AF6BC21F2BDBF0056BF4B /* Assets.xcassets */; };
+		342AF6C021F2BDBF0056BF4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342AF6BE21F2BDBF0056BF4B /* LaunchScreen.storyboard */; };
+		342AF6CB21F2BDC00056BF4B /* Spinny_CircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AF6CA21F2BDC00056BF4B /* Spinny_CircleTests.swift */; };
+		342AF6D621F2BDC00056BF4B /* Spinny_CircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AF6D521F2BDC00056BF4B /* Spinny_CircleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		342AF6C721F2BDC00056BF4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342AF6A421F2BDBE0056BF4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342AF6AB21F2BDBE0056BF4B;
+			remoteInfo = "Spinny Circle";
+		};
+		342AF6D221F2BDC00056BF4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342AF6A421F2BDBE0056BF4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342AF6AB21F2BDBE0056BF4B;
+			remoteInfo = "Spinny Circle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		342AF6AC21F2BDBE0056BF4B /* Spinny Circle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spinny Circle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		342AF6AF21F2BDBE0056BF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		342AF6B121F2BDBE0056BF4B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		342AF6B321F2BDBE0056BF4B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		342AF6B521F2BDBE0056BF4B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		342AF6B721F2BDBE0056BF4B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		342AF6BA21F2BDBE0056BF4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		342AF6BC21F2BDBF0056BF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		342AF6BF21F2BDBF0056BF4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		342AF6C121F2BDBF0056BF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342AF6C621F2BDC00056BF4B /* Spinny CircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spinny CircleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		342AF6CA21F2BDC00056BF4B /* Spinny_CircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinny_CircleTests.swift; sourceTree = "<group>"; };
+		342AF6CC21F2BDC00056BF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342AF6D121F2BDC00056BF4B /* Spinny CircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spinny CircleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		342AF6D521F2BDC00056BF4B /* Spinny_CircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinny_CircleUITests.swift; sourceTree = "<group>"; };
+		342AF6D721F2BDC00056BF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342AF6A921F2BDBE0056BF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6C321F2BDC00056BF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6CE21F2BDC00056BF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342AF6A321F2BDBE0056BF4B = {
+			isa = PBXGroup;
+			children = (
+				342AF6AE21F2BDBE0056BF4B /* Spinny Circle */,
+				342AF6C921F2BDC00056BF4B /* Spinny CircleTests */,
+				342AF6D421F2BDC00056BF4B /* Spinny CircleUITests */,
+				342AF6AD21F2BDBE0056BF4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		342AF6AD21F2BDBE0056BF4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342AF6AC21F2BDBE0056BF4B /* Spinny Circle.app */,
+				342AF6C621F2BDC00056BF4B /* Spinny CircleTests.xctest */,
+				342AF6D121F2BDC00056BF4B /* Spinny CircleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342AF6AE21F2BDBE0056BF4B /* Spinny Circle */ = {
+			isa = PBXGroup;
+			children = (
+				342AF6AF21F2BDBE0056BF4B /* AppDelegate.swift */,
+				342AF6B121F2BDBE0056BF4B /* GameScene.sks */,
+				342AF6B321F2BDBE0056BF4B /* Actions.sks */,
+				342AF6B521F2BDBE0056BF4B /* GameScene.swift */,
+				342AF6B721F2BDBE0056BF4B /* GameViewController.swift */,
+				342AF6B921F2BDBE0056BF4B /* Main.storyboard */,
+				342AF6BC21F2BDBF0056BF4B /* Assets.xcassets */,
+				342AF6BE21F2BDBF0056BF4B /* LaunchScreen.storyboard */,
+				342AF6C121F2BDBF0056BF4B /* Info.plist */,
+			);
+			path = "Spinny Circle";
+			sourceTree = "<group>";
+		};
+		342AF6C921F2BDC00056BF4B /* Spinny CircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				342AF6CA21F2BDC00056BF4B /* Spinny_CircleTests.swift */,
+				342AF6CC21F2BDC00056BF4B /* Info.plist */,
+			);
+			path = "Spinny CircleTests";
+			sourceTree = "<group>";
+		};
+		342AF6D421F2BDC00056BF4B /* Spinny CircleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				342AF6D521F2BDC00056BF4B /* Spinny_CircleUITests.swift */,
+				342AF6D721F2BDC00056BF4B /* Info.plist */,
+			);
+			path = "Spinny CircleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342AF6AB21F2BDBE0056BF4B /* Spinny Circle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342AF6DA21F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny Circle" */;
+			buildPhases = (
+				342AF6A821F2BDBE0056BF4B /* Sources */,
+				342AF6A921F2BDBE0056BF4B /* Frameworks */,
+				342AF6AA21F2BDBE0056BF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spinny Circle";
+			productName = "Spinny Circle";
+			productReference = 342AF6AC21F2BDBE0056BF4B /* Spinny Circle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		342AF6C521F2BDC00056BF4B /* Spinny CircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342AF6DD21F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny CircleTests" */;
+			buildPhases = (
+				342AF6C221F2BDC00056BF4B /* Sources */,
+				342AF6C321F2BDC00056BF4B /* Frameworks */,
+				342AF6C421F2BDC00056BF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342AF6C821F2BDC00056BF4B /* PBXTargetDependency */,
+			);
+			name = "Spinny CircleTests";
+			productName = "Spinny CircleTests";
+			productReference = 342AF6C621F2BDC00056BF4B /* Spinny CircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		342AF6D021F2BDC00056BF4B /* Spinny CircleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342AF6E021F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny CircleUITests" */;
+			buildPhases = (
+				342AF6CD21F2BDC00056BF4B /* Sources */,
+				342AF6CE21F2BDC00056BF4B /* Frameworks */,
+				342AF6CF21F2BDC00056BF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342AF6D321F2BDC00056BF4B /* PBXTargetDependency */,
+			);
+			name = "Spinny CircleUITests";
+			productName = "Spinny CircleUITests";
+			productReference = 342AF6D121F2BDC00056BF4B /* Spinny CircleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342AF6A421F2BDBE0056BF4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kevin Zhang";
+				TargetAttributes = {
+					342AF6AB21F2BDBE0056BF4B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					342AF6C521F2BDC00056BF4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 342AF6AB21F2BDBE0056BF4B;
+					};
+					342AF6D021F2BDC00056BF4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 342AF6AB21F2BDBE0056BF4B;
+					};
+				};
+			};
+			buildConfigurationList = 342AF6A721F2BDBE0056BF4B /* Build configuration list for PBXProject "Spinny Circle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 342AF6A321F2BDBE0056BF4B;
+			productRefGroup = 342AF6AD21F2BDBE0056BF4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342AF6AB21F2BDBE0056BF4B /* Spinny Circle */,
+				342AF6C521F2BDC00056BF4B /* Spinny CircleTests */,
+				342AF6D021F2BDC00056BF4B /* Spinny CircleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342AF6AA21F2BDBE0056BF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342AF6BB21F2BDBE0056BF4B /* Main.storyboard in Resources */,
+				342AF6B221F2BDBE0056BF4B /* GameScene.sks in Resources */,
+				342AF6BD21F2BDBF0056BF4B /* Assets.xcassets in Resources */,
+				342AF6C021F2BDBF0056BF4B /* LaunchScreen.storyboard in Resources */,
+				342AF6B421F2BDBE0056BF4B /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6C421F2BDC00056BF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6CF21F2BDC00056BF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342AF6A821F2BDBE0056BF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342AF6B621F2BDBE0056BF4B /* GameScene.swift in Sources */,
+				342AF6B821F2BDBE0056BF4B /* GameViewController.swift in Sources */,
+				342AF6B021F2BDBE0056BF4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6C221F2BDC00056BF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342AF6CB21F2BDC00056BF4B /* Spinny_CircleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342AF6CD21F2BDC00056BF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342AF6D621F2BDC00056BF4B /* Spinny_CircleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		342AF6C821F2BDC00056BF4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 342AF6AB21F2BDBE0056BF4B /* Spinny Circle */;
+			targetProxy = 342AF6C721F2BDC00056BF4B /* PBXContainerItemProxy */;
+		};
+		342AF6D321F2BDC00056BF4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 342AF6AB21F2BDBE0056BF4B /* Spinny Circle */;
+			targetProxy = 342AF6D221F2BDC00056BF4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		342AF6B921F2BDBE0056BF4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342AF6BA21F2BDBE0056BF4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		342AF6BE21F2BDBF0056BF4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342AF6BF21F2BDBF0056BF4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342AF6D821F2BDC00056BF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		342AF6D921F2BDC00056BF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		342AF6DB21F2BDC00056BF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny Circle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-Circle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		342AF6DC21F2BDC00056BF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny Circle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-Circle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		342AF6DE21F2BDC00056BF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny CircleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-CircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinny Circle.app/Spinny Circle";
+			};
+			name = Debug;
+		};
+		342AF6DF21F2BDC00056BF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny CircleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-CircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinny Circle.app/Spinny Circle";
+			};
+			name = Release;
+		};
+		342AF6E121F2BDC00056BF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny CircleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-CircleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spinny Circle";
+			};
+			name = Debug;
+		};
+		342AF6E221F2BDC00056BF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Spinny CircleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.Spinny-CircleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spinny Circle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342AF6A721F2BDBE0056BF4B /* Build configuration list for PBXProject "Spinny Circle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342AF6D821F2BDC00056BF4B /* Debug */,
+				342AF6D921F2BDC00056BF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342AF6DA21F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny Circle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342AF6DB21F2BDC00056BF4B /* Debug */,
+				342AF6DC21F2BDC00056BF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342AF6DD21F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny CircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342AF6DE21F2BDC00056BF4B /* Debug */,
+				342AF6DF21F2BDC00056BF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342AF6E021F2BDC00056BF4B /* Build configuration list for PBXNativeTarget "Spinny CircleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342AF6E121F2BDC00056BF4B /* Debug */,
+				342AF6E221F2BDC00056BF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342AF6A421F2BDBE0056BF4B /* Project object */;
+}
