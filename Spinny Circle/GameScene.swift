@@ -87,6 +87,7 @@ class GameScene: SKScene {
         
         border.physicsBody = SKPhysicsBody.init(polygonFrom: path)
         border.physicsBody?.affectedByGravity = false
+        border.physicsBody?.isDynamic = false
     }
     
     func initStructures() -> Void {
@@ -98,10 +99,12 @@ class GameScene: SKScene {
         //self.midpoint.position = CGPoint(x: screenRect.width/2, y: screenRect.height/2)
         self.midpoint.position = CGPoint(x: 0, y: 0)
         self.block1.position = CGPoint(x: midpoint.position.x + 86.6, y: midpoint.position.y + 50)
-        self.block1.zRotation = -(.pi / 4)
         self.block2.position = CGPoint(x: midpoint.position.x - 86.6, y: midpoint.position.y + 50)
-        self.block2.zRotation = .pi / 4
         self.block3.position = CGPoint(x: midpoint.position.x,        y: midpoint.position.y - 100)
+        
+        self.block1.zRotation = -(.pi / 4)
+        self.block2.zRotation = .pi / 4
+        self.block3.zRotation = 0
         
         self.midpoint.addChild(block1)
         self.midpoint.addChild(block2)
@@ -111,7 +114,7 @@ class GameScene: SKScene {
     
     func spawnCircles() -> Void {
         let screenBounds = UIScreen.main.bounds
-        let circle = SKSpriteNode.init(imageNamed: "semicircle")
+        let circle = SKSpriteNode.init(imageNamed: "ball")
         circle.physicsBody = SKPhysicsBody.init(circleOfRadius: 10)
         circle.position = CGPoint(x: 0/*Int.random(in: 10...Int(screenBounds.width - 10))*/, y: Int(screenBounds.height/2))
         self.addChild(circle)
@@ -122,13 +125,6 @@ class GameScene: SKScene {
         self.midpoint.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 1)))
         self.midpoint.run(SKAction.repeatForever(SKAction.sequence([SKAction.run {
             self.spawnCircles()
-        }, SKAction.wait(forDuration: 1.0)])))  
-//        SKAction.run {
-//            print("in run")
-//            SKAction.repeatForever(SKAction.sequence([SKAction.run {
-//                print("spawn circles")
-//                self.spawnCircles()
-//                }, SKAction.wait(forDuration: 1.0)]))
-//        }
+        }, SKAction.wait(forDuration: 1.0)])))
     }
 }
