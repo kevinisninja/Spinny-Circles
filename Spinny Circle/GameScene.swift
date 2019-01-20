@@ -13,28 +13,31 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    private var midpoint = SKNode()
+    private var block1 = SKSpriteNode(imageNamed: "semicircle")
+    private var block2 = SKSpriteNode(imageNamed: "semicircle")
+    private var block3 = SKSpriteNode(imageNamed: "semicircle")
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        createPhysicsBodyBorder(border: block1)
+        createPhysicsBodyBorder(border: block2)
+        createPhysicsBodyBorder(border: block3)
         
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
+        //let screenRect = UIScreen.main.bounds
+        //let midpoint = CGPoint(x: screenRect.width/2, y: screenRect.height/2)
+        self.midpoint.position = CGPoint(x: 0, y: 0)
+        self.block1.position = CGPoint(x: midpoint.position.x + 86.6, y: midpoint.position.y + 50)
+        self.block1.zRotation = -(.pi / 4)
+        self.block2.position = CGPoint(x: midpoint.position.x - 86.6, y: midpoint.position.y + 50)
+        self.block2.zRotation = .pi / 4
+        self.block3.position = CGPoint(x: midpoint.position.x,        y: midpoint.position.y - 100)
         
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        self.midpoint.addChild(block1)
+        self.midpoint.addChild(block2)
+        self.midpoint.addChild(block3)
+        self.addChild(midpoint)
+        self.midpoint.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 1)))
     }
     
     
@@ -85,5 +88,21 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+    
+    func createPhysicsBodyBorder(border: SKSpriteNode) -> Void {
+        let offsetX = border.frame.size.width *  border.anchorPoint.x
+        let offsetY = border.frame.size.height * border.anchorPoint.y
+        
+        let path = CGMutablePath.init()
+        path.move(   to: CGPoint(x: 0 -   offsetX, y: 41 - offsetY))
+        path.addLine(to: CGPoint(x: 130 - offsetX, y: 41 - offsetY))
+        path.addLine(to: CGPoint(x: 130 - offsetX, y: 14 - offsetY))
+        path.addLine(to: CGPoint(x: 130 - offsetX, y: 1 -  offsetY))
+        path.addLine(to: CGPoint(x: 0 -   offsetX, y: 1 -  offsetY))
+        path.closeSubpath()
+        
+        border.physicsBody = SKPhysicsBody.init(polygonFrom: path)
+        border.physicsBody?.affectedByGravity = false
     }
 }
